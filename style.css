@@ -188,7 +188,6 @@ main button {
 .contact ul:first-child {
   list-style: none;
   display: flex;
-  flex-direction: column;
   gap: 20px;
 }
 .contact ul:nth-child(2) {
@@ -197,8 +196,16 @@ main button {
   justify-content: center;
   gap: 20px;
 }
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 880px) {
   .contact {
-    height: 220px;
+    height: 300px;
+  }
+  .contact ul:first-child {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact ul:nth-child(2) {
+    display: flex;
+    flex-direction: column;
   }
 }
